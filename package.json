@@ -1,0 +1,11 @@
+{
+	"name": "DemoApi",
+	"version": "1.0.0",
+	"description": "REST API using Node.js",
+	"main": "script.js",
+	"author": "Brian Nebeker",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.1"
+	}
+}
