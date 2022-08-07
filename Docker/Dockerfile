@@ -1,11 +1,11 @@
 FROM node:16
 
 # Create app directory
-RUN mkdir /home/node/app/ && chown -R node:node /home/node/app
+RUN mkdir /usr/src/app/ && chown -R node:node /home/node/app
 
-WORKDIR /home/node/app
+WORKDIR /usr/src/app
 
-COPY --chown=node:node package*.json ./
+COPY package*.json ./
 
 USER node
 
