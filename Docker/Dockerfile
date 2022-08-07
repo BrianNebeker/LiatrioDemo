@@ -1,11 +1,8 @@
 FROM node:16
 
-RUN mkdir ~/app
-WORKDIR ~/app
+WORKDIR /app
 
 COPY package*.json ./
-
-USER node
 
 RUN npm install && npm cache clean --force --loglevel=error
 
