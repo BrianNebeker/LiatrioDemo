@@ -1,8 +1,5 @@
 FROM node:16
 
-# Create app directory
-RUN mkdir /usr/src/app/ && chown -R node:node /home/node/app
-
 WORKDIR /usr/src/app
 
 COPY package*.json ./
