@@ -1,6 +1,6 @@
 FROM node:16
 
-mkdir /usr/src/app
+RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
 COPY package*.json ./
