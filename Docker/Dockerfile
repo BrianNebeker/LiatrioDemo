@@ -6,6 +6,8 @@ COPY package*.json ./
 
 RUN npm install && npm cache clean --force --loglevel=error
 
+COPY . .
+
 EXPOSE 8080
 
 # Make sure application is responding
