@@ -3,7 +3,7 @@
 sudo docker login -u AWS -p $(aws ect get-login-password --region-us-west-1) 037452191287.dkr.ecr.us-west-1.amazonaws.com
 
 // Build docker image
-mkdir awsbuild
+mkdir -p awsbuild
 cp ./Docker/* ./awsbuid/
 cp ./Node/* ./awsbuild/
 
