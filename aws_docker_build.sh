@@ -8,5 +8,5 @@ cp ./Docker/* ./awsbuild/
 cp ./Node/* ./awsbuild/
 
 docker build -t brian ./awsbuild
-docker tag brian:latest 037452191287.dkr.ecr.us-west-1.amazonaws.com/brian:latest
+docker tag brian:latest public.ecr.aws/g1e1b3q8/liatriodemo/brian:latest
 docker push 037452191287.dkr.ecr.us-west-1.amazonaws.com/brian:latest
