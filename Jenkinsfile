@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                // Build docker image on AWS
-                aws_docker_build.sh
+                // Build docker image on Azure
+                azuree/azure_docker_build.sh
             }
         }
     }
