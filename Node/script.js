@@ -4,7 +4,14 @@ app.use(express.json());
   
 // READ Request Handlers
 app.get('/', (req, response) => {
-	response.send('Demo API Version 0.1');
+	if (process.env.BUILD !== 'undefined')
+	{
+		response.send('Demo API Version 0.1');
+	}
+	else
+	{
+		response.send('Demo API Version 0.1 ' + process.env.BUILD);
+	}
 });
  
 app.get('/api/status', (req,response)=> {
