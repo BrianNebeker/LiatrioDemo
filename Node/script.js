@@ -1,17 +1,12 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
+const version = '0.1;
+const build = '%BUILD%';
   
 // READ Request Handlers
 app.get('/', (req, response) => {
-	if (process.env.BUILD !== 'undefined')
-	{
-		response.send('Demo API Version 0.1');
-	}
-	else
-	{
-		response.send('Demo API Version 0.1 ' + process.env.BUILD);
-	}
+  response.send('Demo API Version ' + verison + ' Build '+ build);
 });
  
 app.get('/api/status', (req,response)=> {
