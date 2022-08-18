@@ -6,7 +6,7 @@ const build = '%BUILD%';
   
 // READ Request Handlers
 app.get('/', (req, response) => {
-  response.send('Demo API Version ' + verison + ' Build '+ build);
+  response.send('Demo API Version ' + version + ' Build '+ build);
 });
  
 app.get('/api/status', (req,response)=> {
