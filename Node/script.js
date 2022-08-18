@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
-const version = '0.1';
-const build = '%BUILD%';
+version = '0.1';
+build = '%BUILD%';
   
 // READ Request Handlers
 app.get('/', (req, response) => {
-  response.send('Demo API Version ' + version + ' Build '+ build);
+  response.send('Demo API Version ' + version + ' Build ' + build);
 });
  
 app.get('/api/status', (req,response)=> {
