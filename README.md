@@ -1,5 +1,8 @@
 Liatrio REST API Demo
 
+Creator: Brian Nebeker
+Updated: 8/18/2022
+
 This demo returns at status with a current timestamp using a REST API interface.
 
 GET: /api/status
@@ -50,3 +53,10 @@ The deployment consists of three steps:
   as the step is already accomplished in the previous step. This however depends on the
   token in the previous step still being valid which may not be true if this step is performed
   after enough time for the token to expire.
+
+
+Kubernetes build-out
+
+This information needs to be organized and updated in this document.
+The current method is based on several yaml files stored in Azure and should be organized into
+a helm file to simplify deployment. 
